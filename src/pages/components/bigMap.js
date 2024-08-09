@@ -1,6 +1,3 @@
-import React,{useState,useEffect} from 'react';
-import Axios from 'axios'
-import {useNavigate} from 'react-router-dom'
 import { GoogleMap, MarkerF } from '@react-google-maps/api';
 import mapStyle from "./mapStyle";
 
@@ -15,16 +12,14 @@ const defaultOptions = {
     styles: mapStyle
 }
 
-
 const BigMap = ({ center }) => {
-
 
     return (
         <div className='map'>
             <GoogleMap
                 mapContainerStyle={containerStyle}
                 center={center}
-                zoom={8}
+                zoom={12}
                 options={defaultOptions}>
                     <MarkerF key="default" position={center} />
             </GoogleMap>

@@ -22,7 +22,7 @@ const Layout = () => {
                             <Link className="nav-link" to="/up">UK Parliament</Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link" to="/about">About</Link>
+                            <Link className="nav-link" to="/info">Parliament Info</Link>
                         </li>
 
                     </ul>
