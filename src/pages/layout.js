@@ -7,7 +7,7 @@ const Layout = () => {
                 <nav className="container-fluid navbar navbar-expand-sm bg-white justify-content-between px-5 shadow-sm ">
                     <ul className="navbar-nav">
                         <li className="nav-item">
-                            <Link className="nav-link fs-4 ms-3" to="/home">Scottish Representatives</Link>
+                            <Link className="nav-link fs-4 ms-3" to="/home">Representative Finder</Link>
                         </li>
                     </ul>
                     <ul className="navbar-nav ">
