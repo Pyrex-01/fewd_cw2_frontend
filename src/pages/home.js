@@ -24,9 +24,9 @@ const Home = () => {
 
       <div className="banner">
         <div className="welcome">
-          <h1 className="wel-1">Welcome to Representitive Finder</h1>
+          <h1 className="wel-1">Welcome to Representative Finder</h1>
           <p className="wel-2">
-            This app aims to help users find their constituency's representitives for UK and Scottish Parliament and understand their responsibilities.
+            This app aims to help users find their constituency's representatives for UK and Scottish Parliament and understand their responsibilities.
           </p>
         </div>
       </div>
@@ -36,7 +36,7 @@ const Home = () => {
           <Link class="map-link" to="/up">{isLoaded ? <SmallMap center={defaultCenter} /> : <h1>Loading...</h1>}</Link>
         </div>
         <div className="map-text-area">
-          <h1 className="map-text">Find information about your local representitive!</h1>
+          <h1 className="map-text">Find information about your local representative!</h1>
         </div>
       </div>
     </div>
