@@ -29,10 +29,12 @@ const ScotPar = () => {
         Axios.get("https://api.postcodes.io/postcodes/" + postcode)
             .then((data) => {
                 console.log(data)
+                if (data.data.result.country === "Scotland") {
                 var lat = data.data.result.latitude
                 var lng = data.data.result.longitude
                 setDefaultCentre({ lat, lng })
                 console.log(defaultCenter)
+                }
             }).then(() => {
                 return Axios.get("https://api.postcodes.io/scotland/postcodes/" + postcode)
             }).then((data) => {
